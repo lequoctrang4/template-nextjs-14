@@ -3,6 +3,7 @@
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
+    "source.fixAll": "explicit",
     "source.organizeImports": "never"
   },
 
@@ -10,6 +11,11 @@
   "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
   "eslint.format.enable": false,
   "eslint.workingDirectories": [{ "mode": "auto" }],
+  "eslint.options": {
+    "extensions": [".js", ".jsx", ".ts", ".tsx"]
+  },
+  "eslint.run": "onSave",
+  "eslint.lintTask.enable": true,
 
   // Prettier as default formatter
   "editor.defaultFormatter": "esbenp.prettier-vscode",
