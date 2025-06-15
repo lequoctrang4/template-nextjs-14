@@ -70,7 +70,7 @@
   },
   "files.exclude": {
     "**/node_modules": true,
-    "**/.next": true,
+    "**/.next": false,
     "**/dist": true,
     "**/.git": true,
     "**/.DS_Store": true,
