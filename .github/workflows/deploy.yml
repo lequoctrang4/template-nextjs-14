@@ -44,6 +44,9 @@ jobs:
       - name: Build and export
         run: yarn build
 
+      - name: Verify .next directory
+        run: ls -la ./.next
+
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:

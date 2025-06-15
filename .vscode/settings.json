@@ -68,14 +68,6 @@
     "*.tsx": "typescriptreact",
     "*.ts": "typescript"
   },
-  "files.exclude": {
-    "**/node_modules": true,
-    "**/.next": false,
-    "**/dist": true,
-    "**/.git": true,
-    "**/.DS_Store": true,
-    "**/tsconfig.tsbuildinfo": true
-  },
 
   // Search settings
   "search.exclude": {
