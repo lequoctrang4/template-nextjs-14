@@ -65,13 +65,13 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: nextjs-build
-          path: ./out
+          path: ./.next
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./out
+          publish_dir: ./.next
 
       - name: Notify deployment success
         if: success()
